@@ -1,0 +1,3 @@
+class StoreProcedure():
+
+    DEMO = 'DEMO'
