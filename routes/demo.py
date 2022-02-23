@@ -93,3 +93,19 @@ class DemoEndpoint2(Resource):
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
+
+@api.route('/obtainquestion/prueba')
+class Prueba(Resource):
+
+    api = api
+
+    def __init__(self, restx_placeholder_param=None, request_parser=GenericRequestParser(), request_validator=RequestValidator()):
+        self.request_parser: GenericRequestParser = request_parser
+        self.request_validator: RequestValidator = request_validator
+        super().__init__(self.api)
+    
+    def get(self):
+
+        print(request.headers, flush=True)
+
+        return request.headers

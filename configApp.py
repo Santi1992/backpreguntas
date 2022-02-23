@@ -68,9 +68,9 @@ def create_app(env=None):
         if request.method == "OPTIONS":
             return jsonify({"message":"ok"})
 
-        apiKey = request.headers.get("X-API-KEY", None)
-        if apiKey != "sdgkjkhs23576@23892v":
-            return jsonify({"Access":"No autorizado"}),401
+        # apiKey = request.headers.get("X-API-KEY", None)
+        # if apiKey != "sdgkjkhs23576@23892v":
+        #     return jsonify({"Access":"No autorizado"}),401
 
         log_service: MsLogService = MsLogService(entorno=entorno)
         g.clientUID = request.args.get("userUID", None)
