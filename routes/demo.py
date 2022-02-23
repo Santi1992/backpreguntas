@@ -108,4 +108,4 @@ class Prueba(Resource):
 
         print(request.headers, flush=True)
 
-        return request.headers
+        return {"response":"funcionando"}
