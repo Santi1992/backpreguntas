@@ -2,7 +2,7 @@ import multiprocessing
 import os
 
 timeout=30
-bind = 'localhost:8080'
+bind = '127.0.0.1:8080'
 worker_class = 'gthread'
 max_requests = 3
 #worker_tmp_dir = "/dev/shm"  Si lo corrremos con docker
