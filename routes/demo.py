@@ -5,6 +5,7 @@ from domain.parsers.GenericRequestParser import GenericRequestParser
 from domain.validators.RequesValidator import RequestValidator
 from useCase.ObtenerUsuario import ObtenerUsuario
 from flask import request
+import requests
 from config.swagger import demo_obtener_usuario
 import os
 
@@ -109,3 +110,20 @@ class Prueba(Resource):
         print(request.headers, flush=True)
 
         return {"response":"funcionando"}
+
+
+@api.route('/obtainquestion/prueba2')
+class Prueba(Resource):
+
+    api = api
+
+    def __init__(self, restx_placeholder_param=None, request_parser=GenericRequestParser(), request_validator=RequestValidator()):
+        self.request_parser: GenericRequestParser = request_parser
+        self.request_validator: RequestValidator = request_validator
+        super().__init__(self.api)
+    
+    def get(self):
+
+        algo = requests.get("http://http://52.200.8.58/5000/")
+
+        return algo.json()
