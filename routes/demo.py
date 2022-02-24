@@ -95,7 +95,7 @@ class DemoEndpoint2(Resource):
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
 
-@api.route('/obtainquestion/prueba')
+@api.route('/prueba1')
 class Prueba(Resource):
 
     api = api
@@ -112,7 +112,7 @@ class Prueba(Resource):
         return {"response":"funcionando"}
 
 
-@api.route('/obtainquestion/prueba2')
+@api.route('/prueba2')
 class Prueba(Resource):
 
     api = api
