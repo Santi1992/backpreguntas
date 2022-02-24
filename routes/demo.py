@@ -124,6 +124,6 @@ class Prueba(Resource):
     
     def get(self):
 
-        algo = requests.get("http://172.31.85.47:5000/")
+        algo = requests.get("http://172.31.85.47:8081/")
 
         return algo.json()
