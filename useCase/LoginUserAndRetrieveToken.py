@@ -15,7 +15,7 @@ class LoginUserAndRetrieveToken ():
         self.authenticationService = authenticationService
 
     def execute(self, genericRequest: GenericRequest):
-        user = self.userSeervice.obtain_user(genericRequest.body["id"]) # usr y password hasheado
+        user = self.userSeervice.obtain_user(genericRequest.body["id"]) # pass
         self.authenticationService.check_password(user, genericRequest.body["password"])
         self.authenticationService.is_already_logged(user)
         dataToken: DataToken = self._create_data_token(genericRequest, user)

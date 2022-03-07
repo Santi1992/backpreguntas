@@ -16,8 +16,23 @@ class UserSeervice():
     def obtain_user(self, id):
         users = {
             "mesa1": "soylamesapiola",  # OBJETO CON COSAS DE UN USUARIO.
-            "mesa2": "soylamesaconmasonda",
-            "mesa3": "soyunamesaaburida"
+            "mesa2": "ailucapa",
+            "mesa3": "ailucapa",
+            "mesa4": "ailucapa",
+            "mesa5": "ailucapa",
+            "mesa6": "ailucapa",
+            "mesa7": "ailucapa",
+            "mesa8": "ailucapa",
+            "mesa9": "ailucapa",
+            "mesa10": "ailucapa",
+            "mesa11": "ailucapa",
+            "mesa12": "ailucapa",
+            "mesa13": "ailucapa",
+            "mesa14": "ailucapa",
+            "mesa15": "ailucapa",
+            "mesa16": "ailucapa",
+            "mesa17": "ailucapa",
+            "mesa18": "ailucapa",
         }
         res = users.get(id, None)
         if res == None :

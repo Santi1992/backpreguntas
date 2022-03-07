@@ -8,8 +8,55 @@ from flask import request
 import requests
 from config.swagger import demo_obtener_usuario
 import os
+import random
+
+from useCase.SaveResult import SaveResult
 
 api = Namespace('app', description='demo route')
+
+@api.route('/getresults')
+class Result(Resource):
+
+    api = api
+
+    def __init__(self, restx_placeholder_param=None, request_parser=GenericRequestParser(), request_validator=RequestValidator(), use_case=SaveResult()):
+        self.request_parser: GenericRequestParser = request_parser
+        self.request_validator: RequestValidator = request_validator
+        self.save_result: SaveResult = use_case
+        super().__init__(self.api)
+
+    @api.expect()
+    def get(self):
+
+        genericRequest: GenericRequest = self.request_parser.parse_request(request)
+
+        self.request_validator.generic_validate(genericRequest)
+
+        intt = random.randint(0, 10)
+
+        return {"message": intt}
+
+@api.route('/saveresult')
+class Result(Resource):
+
+    api = api
+
+    def __init__(self, restx_placeholder_param=None, request_parser=GenericRequestParser(), request_validator=RequestValidator(), use_case=SaveResult()):
+        self.request_parser: GenericRequestParser = request_parser
+        self.request_validator: RequestValidator = request_validator
+        self.save_result: SaveResult = use_case
+        super().__init__(self.api)
+
+    @api.expect()
+    def post(self):
+
+        genericRequest: GenericRequest = self.request_parser.parse_request(request)
+
+        self.request_validator.generic_validate(genericRequest)
+
+        res = self.save_result.execute(genericRequest)
+
+        return {"data": res}, 200
 
 @api.route('/login')
 class DemoEndpoint(Resource):
@@ -50,10 +97,10 @@ class DemoEndpoint2(Resource):
         self.request_validator.generic_validate(genericRequest)
 
         print(genericRequest.dataToken)
-        print(genericRequest.dataToken)
 
         if str(id) == "1":
-            return {"pregunta": "¿Qué le regalo nico a cami por la propuesta?", 
+            return {"ultima": "3",
+                    "pregunta": "¿Qué le regalo nico a cami por la propuesta?", 
                     "opciones":[
                         {"id":1, "respuestaPosible":"Unos Aritos"},
                         {"id":2, "respuestaPosible":"Un portaRetratos"},
@@ -67,7 +114,8 @@ class DemoEndpoint2(Resource):
                     "msgPersonalizado": "Buenisimo contestaron la primera pregunta, pongan next para avanzar a la siguiente",
                     }
         if str(id) == "2":
-            return {"pregunta": "¿Cuál es el deporte favorito de nico?", 
+            return {"ultima": "3",
+                    "pregunta": "¿Cuál es el deporte favorito de nico?", 
                     "opciones":[
                         {"id":"1", "respuestaPosible":"Rugby"},
                         {"id":"2", "respuestaPosible":"Futbol"},
@@ -81,7 +129,8 @@ class DemoEndpoint2(Resource):
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "3":
-            return {"pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+            return {"ultima": "3",
+                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
                     "opciones":[
                         {"id":"1", "respuestaPosible":"Ailin"},
                         {"id":"2", "respuestaPosible":"Santi"},
@@ -95,35 +144,4 @@ class DemoEndpoint2(Resource):
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
 
-@api.route('/prueba1')
-class Prueba(Resource):
 
-    api = api
-
-    def __init__(self, restx_placeholder_param=None, request_parser=GenericRequestParser(), request_validator=RequestValidator()):
-        self.request_parser: GenericRequestParser = request_parser
-        self.request_validator: RequestValidator = request_validator
-        super().__init__(self.api)
-    
-    def get(self):
-
-        print(request.headers, flush=True)
-
-        return {"response":"funcionando"}
-
-
-@api.route('/prueba2')
-class Prueba(Resource):
-
-    api = api
-
-    def __init__(self, restx_placeholder_param=None, request_parser=GenericRequestParser(), request_validator=RequestValidator()):
-        self.request_parser: GenericRequestParser = request_parser
-        self.request_validator: RequestValidator = request_validator
-        super().__init__(self.api)
-    
-    def get(self):
-
-        algo = requests.get("http://172.31.85.47:8081/")
-
-        return algo.json()
