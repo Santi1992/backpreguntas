@@ -26,6 +26,7 @@ class SaveResult():
             res = cursor.fetchall()
             if len(res) == 0 :
                 # STEP 2 INGRESAR EL DATO
+                print("paso por acá guachin !!!")
                 data_preguntas = {
                     'idmesa': idUser,
                     'idpregunta': idQuestion,
@@ -34,7 +35,7 @@ class SaveResult():
                 add_respuesta = ("INSERT INTO preguntas "
                     "(idmesa, idpregunta, resultado) "
                     "VALUES (%(idmesa)s, %(idpregunta)s, %(resultado)s)")
-                #cursor.execute(add_respuesta, data_preguntas)
+                cursor.execute(add_respuesta, data_preguntas)
                 cnx.commit()
                 cursor.close()
                 cnx.close()
@@ -44,5 +45,7 @@ class SaveResult():
                 cnx.close()
                 return False
         except Exception as e:
-            print(e)
-            print(str(e))
+            cursor.close()
+            cnx.rollback()
+            cnx.close()
+            return "error"

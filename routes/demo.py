@@ -4,6 +4,7 @@ from useCase.LoginUserAndRetrieveToken import LoginUserAndRetrieveToken
 from domain.parsers.GenericRequestParser import GenericRequestParser
 from domain.validators.RequesValidator import RequestValidator
 from useCase.ObtenerUsuario import ObtenerUsuario
+from useCase.GetResults import GetResults
 from flask import request
 import requests
 from config.swagger import demo_obtener_usuario
@@ -19,10 +20,10 @@ class Result(Resource):
 
     api = api
 
-    def __init__(self, restx_placeholder_param=None, request_parser=GenericRequestParser(), request_validator=RequestValidator(), use_case=SaveResult()):
+    def __init__(self, restx_placeholder_param=None, request_parser=GenericRequestParser(), request_validator=RequestValidator(), use_case=GetResults()):
         self.request_parser: GenericRequestParser = request_parser
         self.request_validator: RequestValidator = request_validator
-        self.save_result: SaveResult = use_case
+        self.getResults: GetResults() = use_case
         super().__init__(self.api)
 
     @api.expect()
@@ -31,10 +32,10 @@ class Result(Resource):
         genericRequest: GenericRequest = self.request_parser.parse_request(request)
 
         self.request_validator.generic_validate(genericRequest)
+        
+        result = self.getResults.execute(genericRequest)
 
-        intt = random.randint(0, 10)
-
-        return {"message": intt}
+        return {"message": result}
 
 @api.route('/saveresult')
 class Result(Resource):
@@ -55,6 +56,9 @@ class Result(Resource):
         self.request_validator.generic_validate(genericRequest)
 
         res = self.save_result.execute(genericRequest)
+
+        if res == "error":
+            return {"msg":"error"}, 500
 
         return {"data": res}, 200
 
