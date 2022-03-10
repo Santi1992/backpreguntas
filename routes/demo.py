@@ -13,7 +13,7 @@ import random
 
 from useCase.SaveResult import SaveResult
 
-api = Namespace('app', description='demo route')
+api = Namespace('api', description='demo route')
 
 @api.route('/getresults')
 class Result(Resource):
