@@ -21,12 +21,14 @@ class SaveResult():
         try:
             cnx = self.sql.connect()
             cursor = cnx.cursor(dictionary=True)
+            print("*****************",flush=True)
+            print("*******LLEGO HAST ACÁ**********",flush=True)
             # STEP 1 VERIFICAR SI YA SE CONTESTO LA PREGUNTA.
             cursor.execute(f"SELECT * FROM camila.preguntas WHERE idmesa='{idUser}' and idpregunta='{idQuestion}'")
             res = cursor.fetchall()
             if len(res) == 0 :
                 # STEP 2 INGRESAR EL DATO
-                print("paso por acá guachin !!!")
+                print("Es 0 , se ebe cargar !!!", flush=True)
                 data_preguntas = {
                     'idmesa': idUser,
                     'idpregunta': idQuestion,
@@ -37,14 +39,20 @@ class SaveResult():
                     "VALUES (%(idmesa)s, %(idpregunta)s, %(resultado)s)")
                 cursor.execute(add_respuesta, data_preguntas)
                 cnx.commit()
+                print("por romper...", flush=True)
                 cursor.close()
+                print("no rompio...", flush=True)
                 cnx.close()
                 return True
             else:
+                print("No corresponse cargar nada, aún no rompio", flush=True)
                 cursor.close()
+                print("no rompiooo", flush=True)
                 cnx.close()
                 return False
         except Exception as e:
+            print("ENTRO A LA EXPCEPCIÓN!!!...", flush=True)
+            print(str(e), flush=True)
             cursor.close()
             cnx.rollback()
             cnx.close()
