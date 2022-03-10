@@ -12,4 +12,4 @@ api = Api(
     doc="/swagger/" if env != "production" else None
 )
 
-api.add_namespace(ns1, path='/app')
+api.add_namespace(ns1, path='/api')
