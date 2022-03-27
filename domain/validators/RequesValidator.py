@@ -1,3 +1,4 @@
+from os import ST_APPEND
 from domain.entities.GenericRequest import GenericRequest
 from domain.validators.Validations import Validations
 from repository.locals.LocalEnvRepository import LocalEnvRepository
@@ -15,8 +16,8 @@ class RequestValidator(Validations):
         self.check_token_and_save_data_in_generic_request(genericRequest)
 
     def login_endpoint_validate(self, genericRequest: GenericRequest):
-            user = genericRequest.body.get("id", "")
-            password = genericRequest.body.get("password", "")
+            user : str = genericRequest.body.get("id", "")
+            password : str = genericRequest.body.get("password", "")
             if user == "" or password == "":
                 raise ValidationException("debe enviar alguno de los dos")
     

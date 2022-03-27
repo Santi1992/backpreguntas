@@ -15,24 +15,25 @@ class UserSeervice():
     
     def obtain_user(self, id):
         users = {
-            "mesa1": "soylamesapiola",  # OBJETO CON COSAS DE UN USUARIO.
-            "mesa2": "ailucapa",
-            "mesa3": "ailucapa",
-            "mesa4": "ailucapa",
-            "mesa5": "ailucapa",
-            "mesa6": "ailucapa",
-            "mesa7": "ailucapa",
-            "mesa8": "ailucapa",
-            "mesa9": "ailucapa",
-            "mesa10": "ailucapa",
-            "mesa11": "ailucapa",
-            "mesa12": "ailucapa",
-            "mesa13": "ailucapa",
-            "mesa14": "ailucapa",
-            "mesa15": "ailucapa",
-            "mesa16": "ailucapa",
-            "mesa17": "ailucapa",
-            "mesa18": "ailucapa",
+            "mesa1": "camiessexy",  # OBJETO CON COSAS DE UN USUARIO.
+            "mesa2": "nicoessexy",
+            "mesa3": "lanoviaessexy",
+            "mesa4": "elnovioessexy",
+            "mesa5": "niconacioparaelbasquet",
+            "mesa6": "deestamesasalesexo",
+            "mesa7": "ibaelesabueno",
+            "mesa8": "camibailasexy",
+            "mesa9": "camirompelapista",
+            "mesa10": "nicorompelapista",
+            "mesa11": "instrumentadorasexy",
+            "mesa12": "elnoviolatienebig",
+            "mesa13": "caminicoseamanmucho",
+            "mesa14": "santiesuncapo",
+            "mesa15": "elnoviolatienesuperbig",
+            "mesa16": "nicoesbobelconstructor",
+            "mesa17": "sevieneelpibe",
+            "mesa18": "estanochesereproduce",
+            "mesa19": "santiesuncapo",
         }
         res = users.get(id, None)
         if res == None :
