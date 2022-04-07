@@ -15,25 +15,24 @@ class UserSeervice():
     
     def obtain_user(self, id):
         users = {
-            "mesa1": "camiessexy",  # OBJETO CON COSAS DE UN USUARIO.
-            "mesa2": "nicoessexy",
-            "mesa3": "lanoviaessexy",
-            "mesa4": "elnovioessexy",
-            "mesa5": "niconacioparaelbasquet",
-            "mesa6": "deestamesasalesexo",
-            "mesa7": "ibaelesabueno",
-            "mesa8": "camibailasexy",
-            "mesa9": "camirompelapista",
-            "mesa10": "nicorompelapista",
-            "mesa11": "instrumentadorasexy",
-            "mesa12": "elnoviolatienebig",
-            "mesa13": "caminicoseamanmucho",
-            "mesa14": "santiesuncapo",
-            "mesa15": "elnoviolatienesuperbig",
-            "mesa16": "nicoesbobelconstructor",
-            "mesa17": "sevieneelpibe",
-            "mesa18": "estanochesereproduce",
-            "mesa19": "santiesuncapo",
+            "mesa1": "chicasdelosmartes",  # OBJETO CON COSAS DE UN USUARIO.
+            "mesa2": "atailandianovuelvomas",
+            "mesa3": "chofilinlinlan...",
+            "mesa4": "nuevedoce",
+            "mesa5": "carlosmepasaslosmorrones",
+            "mesa6": "elculicerebro",
+            "mesa7": "lospoli",
+            "mesa8": "elespigon",
+            "mesa9": "labolucompra",
+            "mesa10": "duadameesaipa",
+            "mesa11": "mecinayvino",
+            "mesa12": "podesparar",
+            "mesa14": "tengoladata",
+            "mesa15": "quehaceschiquito",
+            "mesa16": "cuandohayajuste",
+            "mesa17": "clubnahuel",
+            "mesa18": "alliskocher",
+            "mesa19": "master",
         }
         res = users.get(id, None)
         if res == None :
