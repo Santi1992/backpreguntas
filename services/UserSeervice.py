@@ -15,7 +15,7 @@ class UserSeervice():
     
     def obtain_user(self, id):
         users = {
-            "mesa1": "chicasdelosmartes",  # OBJETO CON COSAS DE UN USUARIO.
+            "mesa1": "chicasdelosmartes",
             "mesa2": "atailandianovuelvomas",
             "mesa3": "chofilinlinlan...",
             "mesa4": "nuevedoce",
