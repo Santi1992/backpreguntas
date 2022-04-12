@@ -147,181 +147,181 @@ class DemoEndpoint2(Resource):
                     }
         if str(id) == "4":
             return {"ultima": "15",
-                "pregunta": "¿De qué equipo de fútbol son los novios?", 
+                "pregunta": "¿ Cómo se llamaron los primeros perros que tuvieron Cami y Nico en su infancia?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Los dos de riBer"},
-                        {"id":"2", "respuestaPosible":"Boca nico- River cami"},
-                        {"id":"3", "respuestaPosible":"River nico- Cami san lorenzo"},
-                        {"id":"4", "respuestaPosible":"River nico- Boca cami"},
+                        {"id":"1", "respuestaPosible":"Luna-Archie."},
+                        {"id":"2", "respuestaPosible":"Flash- Lola."},
+                        {"id":"3", "respuestaPosible":"Luna-Lola"},
+                        {"id":"4", "respuestaPosible":"Flash-Archie."},
                         ],
                     "preguntaTramposa": {
-                        "id":"2",
-                        "msg": "Dale boludo no viste todos los buzos que tiene nico, elegi otra"
+                        "id":"3",
+                        "msg": "Esta no es !!, por esta vez selecciona otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "5":
             return {"ultima": "15",
-                "pregunta": "¿Cuantos gatos tienen los novios?", 
+                "pregunta": "¿Como se llama el primer gato que tuvieron los novios?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"1"},
-                        {"id":"2", "respuestaPosible":"2"},
-                        {"id":"3", "respuestaPosible":"3"},
-                        {"id":"4", "respuestaPosible":"4"},
+                        {"id":"1", "respuestaPosible":"Muñeco"},
+                        {"id":"2", "respuestaPosible":"Iavel |||"},
+                        {"id":"3", "respuestaPosible":"River"},
+                        {"id":"4", "respuestaPosible":"Pity"},
                         ],
                     "preguntaTramposa": {
-                        "id":"4",
-                        "msg": "Dale que somos los locos de los gatos, elegi otra!"
+                        "id":"1",
+                        "msg": "Esta no es, pero fue nuestra segunda opción"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "6":
             return {"ultima": "15",
-                "pregunta": "¿Como se llama el primer gato que tuvieron los novios?", 
+                "pregunta": "¿Quién suele olvidarse de darle de tomar agua a los gatos?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"muñeco"},
-                        {"id":"2", "respuestaPosible":"leia"},
-                        {"id":"3", "respuestaPosible":"Enzo"},
-                        {"id":"4", "respuestaPosible":"ivael"},
+                        {"id":"1", "respuestaPosible":"Cami"},
+                        {"id":"2", "respuestaPosible":"Nico"},
+                        {"id":"3", "respuestaPosible":"Nadie se olvida, ambos les damos agua y comida por igual"},
+                        {"id":"4", "respuestaPosible":"Los gatos toman agua del inohodoro"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "No elegimos nombres tan horribles, elegi otro!"
+                        "id":"4",
+                        "msg": "A veces pasa jajaja , pero no es, elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "7":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿En qué año se pusieron de novios Cami y Nico?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"2012"},
+                        {"id":"2", "respuestaPosible":"2013"},
+                        {"id":"3", "respuestaPosible":"2014"},
+                        {"id":"4", "respuestaPosible":"2008"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "id":"4",
+                        "msg": "esta no es elegí otra, no nos dan la cuenta"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "8":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿A qué club fueron Cami y Nico de chicos?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"Club Hacoaj-Club Ciudad"},
+                        {"id":"2", "respuestaPosible":"Club Nahuel-GEBA"},
+                        {"id":"3", "respuestaPosible":"Club Hacoaj-GEBA"},
+                        {"id":"4", "respuestaPosible":"Club Nahuel-Club Ciudad"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "id":"1",
+                        "msg": "Podría haber sido pero no"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "9":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿Qué día cumplen años Cami y Nico?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"18/07 - 06/01"},
+                        {"id":"2", "respuestaPosible":"18/07 - 07/01"},
+                        {"id":"3", "respuestaPosible":"28/07 - 07/01"},
+                        {"id":"4", "respuestaPosible":"28/07 - 06/01"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "id":"1",
+                        "msg": "trampita, muchos piensan que Nico cumple años el 06, no te confundas, elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "10":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿Qué se regalaron los novios para el festejo de los 6 meses ( en aquella epoca se festejaban los meses ♡)", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"Una camiseta de river-unos aritos"},
+                        {"id":"2", "respuestaPosible":"Conjunto sexy-paletas de ping pong "},
+                        {"id":"3", "respuestaPosible":"dvd de la primer pelicula que vieron-anillo de compromiso"},
+                        {"id":"4", "respuestaPosible":"No se regalaron nada :( "},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "id":"1",
+                        "msg": "Podría haber sido, pero no. Elegí otra."
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "11":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿A qué jardín de infantes fueron Cami y Nico?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"Pipoca-Peter Pan"},
+                        {"id":"2", "respuestaPosible":"Tarbut-Peter Pan"},
+                        {"id":"3", "respuestaPosible":"Sholem-Northbridge"},
+                        {"id":"4", "respuestaPosible":"Tarbut-Northbridge"},
                         ],
                     "preguntaTramposa": {
                         "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "msg": "trampita, Cami si fue al Sholem unos años :)), elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "12":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿Quién de la pareja habla más?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"Nico"},
+                        {"id":"2", "respuestaPosible":"Cami"},
+                        {"id":"3", "respuestaPosible":"Los dos por igual"},
+                        {"id":"4", "respuestaPosible":"Ninguno habla mucho"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "id":"1",
+                        "msg": "Realmente pusiste nico?? En qué momento lo escuchaste hablar más que a Cami?), elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "13":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿ Ante una discusión, siempre uno de los novios es el primero en pedir perdón. Quién es?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"Cami"},
+                        {"id":"2", "respuestaPosible":"Nico"},
+                        {"id":"3", "respuestaPosible":"Los novios nunca discuten"},
+                        {"id":"4", "respuestaPosible":"Los novios no se perdonan"},
                         ],
                     "preguntaTramposa": {
                         "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "msg": "jaja claro claro, ya quisieras, elegí otra te doy otra oportunidad"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "14":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿A qué país de Europa los novios no fueron juntos?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"Italia"},
+                        {"id":"2", "respuestaPosible":"España"},
+                        {"id":"3", "respuestaPosible":"Reino Unido"},
+                        {"id":"4", "respuestaPosible":"República checa"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "id":"4",
+                        "msg": "estuvieron en Praga. Experiencias inolvidables con los borrachos de la calle escupiendo a la novia, elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "15":
             return {"ultima": "15",
-                "pregunta": "¿Cuál es el Cuñado favorito de nico?", 
+                "pregunta": "¿A dónde van los novios de luna de miel?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Ailin"},
-                        {"id":"2", "respuestaPosible":"Santi"},
-                        {"id":"3", "respuestaPosible":"Gisela"},
-                        {"id":"4", "respuestaPosible":"No tiene"},
+                        {"id":"1", "respuestaPosible":"México"},
+                        {"id":"2", "respuestaPosible":"Colombia"},
+                        {"id":"3", "respuestaPosible":"Brasil"},
+                        {"id":"4", "respuestaPosible":"Perú"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "Alto salame, gisela es la suegra!"
+                        "id":"4",
+                        "msg": "yy este es un viaje pendiente, pero queremos playita bebe!!"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
