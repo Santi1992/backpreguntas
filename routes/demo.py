@@ -237,7 +237,7 @@ class DemoEndpoint2(Resource):
                     }
         if str(id) == "10":
             return {"ultima": "15",
-                "pregunta": "¿Qué se regalaron los novios para el festejo de los 6 meses ( en aquella epoca se festejaban los meses ♡)", 
+                "pregunta": "¿ Como se va a llamar el perro de los novios cuando crezca ?", 
                     "opciones":[
                         {"id":"1", "respuestaPosible":"dog abuelo"},
                         {"id":"2", "respuestaPosible":"dog jubilado "},
@@ -323,6 +323,6 @@ class DemoEndpoint2(Resource):
                         "id":"1",
                         "msg": "Siempre hay una formalidad.... mas en un contrato como s.a , elegí otra"
                     },
-                    "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
+                    "msgPersonalizado": "Gracias por jugar, espero saquen un buen resultado!!!!!, aunque no nos importa"
                     }
       
