@@ -15,24 +15,22 @@ class UserSeervice():
     
     def obtain_user(self, id):
         users = {
-            "mesa1": "chicasdelosmartes",
-            "mesa2": "atailandianovuelvomas",
-            "mesa3": "chofilinlinlan...",
-            "mesa4": "nuevedoce",
-            "mesa5": "carlosmepasaslosmorrones",
-            "mesa6": "elculicerebro",
-            "mesa7": "lospoli",
-            "mesa8": "elespigon",
-            "mesa9": "labolucompra",
-            "mesa10": "duadameesaipa",
-            "mesa11": "mecinayvino",
-            "mesa12": "podesparar",
-            "mesa14": "tengoladata",
-            "mesa15": "quehaceschiquito",
-            "mesa16": "cuandohayajuste",
-            "mesa17": "clubnahuel",
-            "mesa18": "alliskocher",
-            "mesa19": "master",
+            "cocacola": "pasaseloa...",
+            "price": "jovenesprofesionalesdrogadictos",
+            "benei": "afnapasion",
+            "mercadolibre": "yolavi",
+            "bice": "pasameelip",
+            "bna": "nuncasedaracuenta",
+            "itau": "elloboyeldetective",
+            "patagonia": "elbudamehacetocarmejor",
+            "pañalera": "santiailuhoylaponenfuerte",
+            "sabra": "lospoli",
+            "techint": "mamateamo",
+            "bancochanti": "tatisupercapo",
+            "janos": "tigreyalsinasiempredefiesta",
+            "clover": "analytica",
+            "showpo": "santiailusexys",
+            "schneider":"hoyesnochedesexo"
         }
         res = users.get(id, None)
         if res == None :

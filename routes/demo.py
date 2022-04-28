@@ -102,16 +102,16 @@ class DemoEndpoint2(Resource):
 
         if str(id) == "1":
             return {"ultima": "15",
-                    "pregunta": "¿Quién se enamoro primero?", 
+                    "pregunta": "¿Cuanto mide la de Santi?", 
                     "opciones":[
-                        {"id":1, "respuestaPosible":"Ninguno"},
-                        {"id":2, "respuestaPosible":"Los dos a la vez"},
-                        {"id":3, "respuestaPosible":"Camila"},
-                        {"id":4, "respuestaPosible":"Nico"},
+                        {"id":1, "respuestaPosible":"22"},
+                        {"id":2, "respuestaPosible":"24"},
+                        {"id":3, "respuestaPosible":"23"},
+                        {"id":4, "respuestaPosible":"tan enorme que no entro en la regla que tenemos en casa"},
                         ],
                     "preguntaTramposa": {
                         "id":"1",
-                        "msg": "nahh Bolu, nos estamos casando, no jodas"
+                        "msg": "nahh Bolu, mira si la va a tener tan chica"
                     },
                     "msgPersonalizado": "Buenisimo contestaron la primera pregunta, pongan next para avanzar a la siguiente",
                     }
@@ -119,119 +119,119 @@ class DemoEndpoint2(Resource):
             return {"ultima": "15",
                     "pregunta": "¿Cuál fue la primer película que los novios vieron juntos?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"9 reinas"},
-                        {"id":"2", "respuestaPosible":"Corazon de leon"},
-                        {"id":"3", "respuestaPosible":"This is it"},
-                        {"id":"4", "respuestaPosible":"Batman"},
-                        ],
-                    "preguntaTramposa": {
-                        "id":"4",
-                        "msg": "Cami no vio ninguna de batman!, elegi otra"
-                    },
-                    "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
-                    }
-        if str(id) == "3":
-            return {"ultima": "15",
-                "pregunta": "¿Quién cocina más rico?", 
-                    "opciones":[
-                        {"id":"1", "respuestaPosible":"Los dos por igual"},
-                        {"id":"2", "respuestaPosible":"Cami"},
-                        {"id":"3", "respuestaPosible":"Nico"},
-                        {"id":"4", "respuestaPosible":"Ninguno, aguante rapi"},
+                        {"id":"1", "respuestaPosible":"El Patriota"},
+                        {"id":"2", "respuestaPosible":"Dreamgirls"},
+                        {"id":"3", "respuestaPosible":"Notting Hill"},
+                        {"id":"4", "respuestaPosible":"Diario de una Pasión"},
                         ],
                     "preguntaTramposa": {
                         "id":"1",
-                        "msg": "Siempre alguien es mejor, volve a elegir!"
+                        "msg": "Dale panqueques, le mostré una mejor como primera, elijan otra"
                     },
-                    "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
+                    "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta. Fue Notting Hill"
+                    }
+        if str(id) == "3":
+            return {"ultima": "15",
+                "pregunta": "¿Cuál fue la primer pelea?", 
+                    "opciones":[
+                        {"id":"1", "respuestaPosible":"Helado"},
+                        {"id":"2", "respuestaPosible":"Santi no lavó los platos"},
+                        {"id":"3", "respuestaPosible":"Ravioles"},
+                        {"id":"4", "respuestaPosible":"Ailu tiró mate en el auto"},
+                        ],
+                    "preguntaTramposa": {
+                        "id":"1",
+                        "msg": "Reeee podría ser, pero no.. casi je"
+                    },
+                    "msgPersonalizado": "Santi le sacó un raviol a Ailu y explotó todo, pongan next para la siguiente pregunta"
                     }
         if str(id) == "4":
             return {"ultima": "15",
-                "pregunta": "¿ Cómo se llamaron los primeros perros que tuvieron Cami y Nico en su infancia?", 
+                "pregunta": "Después de Ushuaia Ailu se convirtió en...", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Luna-Archie."},
-                        {"id":"2", "respuestaPosible":"Flash- Lola."},
-                        {"id":"3", "respuestaPosible":"Luna-Lola"},
-                        {"id":"4", "respuestaPosible":"Flash-Archie."},
+                        {"id":"1", "respuestaPosible":"La renga chulata"},
+                        {"id":"2", "respuestaPosible":"La traga Nieve"},
+                        {"id":"3", "respuestaPosible":"La reina de la montaña"},
+                        {"id":"4", "respuestaPosible":"La princesa Castor"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "Esta no es !!, por esta vez selecciona otra"
+                        "id":"2",
+                        "msg": "Nieve no...pero... ,  elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "5":
             return {"ultima": "15",
-                "pregunta": "¿Como se llama el primer gato que tuvieron los novios?", 
+                "pregunta": "¿Como se llama la empresa de programación de los novios?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Muñeco"},
-                        {"id":"2", "respuestaPosible":"Iavel |||"},
-                        {"id":"3", "respuestaPosible":"River"},
-                        {"id":"4", "respuestaPosible":"Pity"},
+                        {"id":"1", "respuestaPosible":"Clover Princess"},
+                        {"id":"2", "respuestaPosible":"Marry Me Solutions"},
+                        {"id":"3", "respuestaPosible":"Princess Labs"},
+                        {"id":"4", "respuestaPosible":"Code Fingers"},
                         ],
                     "preguntaTramposa": {
-                        "id":"1",
-                        "msg": "Esta no es, pero fue nuestra segunda opción"
+                        "id":"3",
+                        "msg": "Daaa, que pensas que solo la estrella es Ailin"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "6":
             return {"ultima": "15",
-                "pregunta": "¿Quién suele olvidarse de darle de tomar agua a los gatos?", 
+                "pregunta": "En tiempos de guerra, para encontrarse, ¿que muralla había que cruzar?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Cami"},
-                        {"id":"2", "respuestaPosible":"Nico"},
-                        {"id":"3", "respuestaPosible":"Nadie se olvida, ambos les damos agua y comida por igual"},
-                        {"id":"4", "respuestaPosible":"Los gatos toman agua del inohodoro"},
+                        {"id":"1", "respuestaPosible":"La muralla China"},
+                        {"id":"2", "respuestaPosible":"La General Paz"},
+                        {"id":"3", "respuestaPosible":"maipu y lavalle, alto control"},
+                        {"id":"4", "respuestaPosible":"Cabildo y congreso"},
                         ],
                     "preguntaTramposa": {
-                        "id":"4",
-                        "msg": "A veces pasa jajaja , pero no es, elegí otra"
+                        "id":"1",
+                        "msg": "Estamos en argentina nabolin"
                     },
-                    "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
+                    "msgPersonalizado": "Plena cuarentena obligatoria, la general paz estaba minada, pongan next para la siguiente pregunta"
                     }
         if str(id) == "7":
             return {"ultima": "15",
-                "pregunta": "¿En qué año se pusieron de novios Cami y Nico?", 
+                "pregunta": "¿Que es lo que mas le gusta a ailu de santi?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"2012"},
-                        {"id":"2", "respuestaPosible":"2013"},
-                        {"id":"3", "respuestaPosible":"2014"},
-                        {"id":"4", "respuestaPosible":"2008"},
+                        {"id":"1", "respuestaPosible":"los rulitos"},
+                        {"id":"2", "respuestaPosible":"su culo"},
+                        {"id":"3", "respuestaPosible":"sus abominales"},
+                        {"id":"4", "respuestaPosible":"su simpatía"},
                         ],
                     "preguntaTramposa": {
                         "id":"4",
-                        "msg": "esta no es elegí otra, no nos dan la cuenta"
+                        "msg": "Ailu es más superficial..... ja"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "8":
             return {"ultima": "15",
-                "pregunta": "¿A qué club fueron Cami y Nico de chicos?", 
+                "pregunta": "¿Como se llama el arbol q plantaron los novios?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Club Hacoaj-Club Ciudad"},
-                        {"id":"2", "respuestaPosible":"Club Nahuel-GEBA"},
-                        {"id":"3", "respuestaPosible":"Club Hacoaj-GEBA"},
-                        {"id":"4", "respuestaPosible":"Club Nahuel-Club Ciudad"},
+                        {"id":"1", "respuestaPosible":"el gran arbol"},
+                        {"id":"2", "respuestaPosible":"el arbol del amor"},
+                        {"id":"3", "respuestaPosible":"tomatero"},
+                        {"id":"4", "respuestaPosible":"baby tree"},
                         ],
                     "preguntaTramposa": {
-                        "id":"1",
-                        "msg": "Podría haber sido pero no"
+                        "id":"3",
+                        "msg": "Somos mas creativos que eso.... elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "9":
             return {"ultima": "15",
-                "pregunta": "¿Qué día cumplen años Cami y Nico?", 
+                "pregunta": "¿Como se va a llamar el perro de la pareja?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"18/07 - 06/01"},
-                        {"id":"2", "respuestaPosible":"18/07 - 07/01"},
-                        {"id":"3", "respuestaPosible":"28/07 - 07/01"},
-                        {"id":"4", "respuestaPosible":"28/07 - 06/01"},
+                        {"id":"1", "respuestaPosible":"rudolf"},
+                        {"id":"2", "respuestaPosible":"baby dog"},
+                        {"id":"3", "respuestaPosible":"flash junior"},
+                        {"id":"4", "respuestaPosible":"gasparsito"},
                         ],
                     "preguntaTramposa": {
                         "id":"1",
-                        "msg": "trampita, muchos piensan que Nico cumple años el 06, no te confundas, elegí otra"
+                        "msg": "diosss, no quedo claro con la anterior pregunta????, elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
@@ -239,89 +239,89 @@ class DemoEndpoint2(Resource):
             return {"ultima": "15",
                 "pregunta": "¿Qué se regalaron los novios para el festejo de los 6 meses ( en aquella epoca se festejaban los meses ♡)", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Una camiseta de river-unos aritos"},
-                        {"id":"2", "respuestaPosible":"Conjunto sexy-paletas de ping pong "},
-                        {"id":"3", "respuestaPosible":"dvd de la primer pelicula que vieron-anillo de compromiso"},
-                        {"id":"4", "respuestaPosible":"No se regalaron nada :( "},
+                        {"id":"1", "respuestaPosible":"dog abuelo"},
+                        {"id":"2", "respuestaPosible":"dog jubilado "},
+                        {"id":"3", "respuestaPosible":"dog crecido"},
+                        {"id":"4", "respuestaPosible":"dog"},
                         ],
                     "preguntaTramposa": {
                         "id":"1",
-                        "msg": "Podría haber sido, pero no. Elegí otra."
+                        "msg": "Podría haber sido, pero no, quiza en la próxima pregunta...... Elegí otra."
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "11":
             return {"ultima": "15",
-                "pregunta": "¿A qué jardín de infantes fueron Cami y Nico?", 
+                "pregunta": "¿Como se va a llamar el perro de los novios, de super viejo?... na joda, Elegí el cronograma correcto", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Pipoca-Peter Pan"},
-                        {"id":"2", "respuestaPosible":"Tarbut-Peter Pan"},
-                        {"id":"3", "respuestaPosible":"Sholem-Northbridge"},
-                        {"id":"4", "respuestaPosible":"Tarbut-Northbridge"},
+                        {"id":"1", "respuestaPosible":"match tinder 03/05, noviazgo 06/06"},
+                        {"id":"2", "respuestaPosible":"match tinder 19/05, sacada pasaje a cancun 06/06"},
+                        {"id":"3", "respuestaPosible":"match tinder 03/05, propuesta 16/06"},
+                        {"id":"4", "respuestaPosible":"match tinder 21/05, propuesta 02/09"},
                         ],
                     "preguntaTramposa": {
                         "id":"3",
-                        "msg": "trampita, Cami si fue al Sholem unos años :)), elegí otra"
+                        "msg": "mmmm la prouesta es muy cercana, tan manijas no somos"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "12":
             return {"ultima": "15",
-                "pregunta": "¿Quién de la pareja habla más?", 
+                "pregunta": "¿A cuantos días de conocerse sacaron un pasaje a cancun?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Nico"},
-                        {"id":"2", "respuestaPosible":"Cami"},
-                        {"id":"3", "respuestaPosible":"Los dos por igual"},
-                        {"id":"4", "respuestaPosible":"Ninguno habla mucho"},
+                        {"id":"1", "respuestaPosible":"61"},
+                        {"id":"2", "respuestaPosible":"24"},
+                        {"id":"3", "respuestaPosible":"43"},
+                        {"id":"4", "respuestaPosible":"123"},
                         ],
                     "preguntaTramposa": {
-                        "id":"1",
-                        "msg": "Realmente pusiste nico?? En qué momento lo escuchaste hablar más que a Cami?), elegí otra"
+                        "id":"4",
+                        "msg": "somos bastante más intensos je, muy in lovee, elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "13":
             return {"ultima": "15",
-                "pregunta": "¿ Ante una discusión, siempre uno de los novios es el primero en pedir perdón. Quién es?", 
+                "pregunta": "¿ Que festejan los novios hoy ademas del casamiento?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Cami"},
-                        {"id":"2", "respuestaPosible":"Nico"},
-                        {"id":"3", "respuestaPosible":"Los novios nunca discuten"},
-                        {"id":"4", "respuestaPosible":"Los novios no se perdonan"},
+                        {"id":"1", "respuestaPosible":"Aniversario de novios"},
+                        {"id":"2", "respuestaPosible":"Un año de conocerse"},
+                        {"id":"3", "respuestaPosible":"Compromiso de por vida"},
+                        {"id":"4", "respuestaPosible":"Ninguna es correcta"},
                         ],
                     "preguntaTramposa": {
-                        "id":"3",
-                        "msg": "jaja claro claro, ya quisieras, elegí otra te doy otra oportunidad"
+                        "id":"4",
+                        "msg": "siempre una es correcta, elegí otra te doy otra oportunidad"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "14":
             return {"ultima": "15",
-                "pregunta": "¿A qué país de Europa los novios no fueron juntos?", 
+                "pregunta": "¿Cual fue el primer regalo que se hicieron los novios mutuamente?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"Italia"},
-                        {"id":"2", "respuestaPosible":"España"},
-                        {"id":"3", "respuestaPosible":"Reino Unido"},
-                        {"id":"4", "respuestaPosible":"República checa"},
+                        {"id":"1", "respuestaPosible":"un block - un rutini"},
+                        {"id":"2", "respuestaPosible":"un llavero - luces"},
+                        {"id":"3", "respuestaPosible":"colgador de zapatos - bolsa de vino de 5 litos"},
+                        {"id":"4", "respuestaPosible":"caja de forros - lubricante"},
                         ],
                     "preguntaTramposa": {
                         "id":"4",
-                        "msg": "estuvieron en Praga. Experiencias inolvidables con los borrachos de la calle escupiendo a la novia, elegí otra"
+                        "msg": "que zarpados, eso no era un regalo, era rutina jeje... , elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
         if str(id) == "15":
             return {"ultima": "15",
-                "pregunta": "¿A dónde van los novios de luna de miel?", 
+                "pregunta": "¿Quien le pregunto a quien de ser novios?", 
                     "opciones":[
-                        {"id":"1", "respuestaPosible":"México"},
-                        {"id":"2", "respuestaPosible":"Colombia"},
-                        {"id":"3", "respuestaPosible":"Brasil"},
-                        {"id":"4", "respuestaPosible":"Perú"},
+                        {"id":"1", "respuestaPosible":"No hubo pregunta, se dio solo"},
+                        {"id":"2", "respuestaPosible":"Ailu a santi"},
+                        {"id":"3", "respuestaPosible":"Santi a ailu"},
+                        {"id":"4", "respuestaPosible":"Los dos a la vez"},
                         ],
                     "preguntaTramposa": {
-                        "id":"4",
-                        "msg": "yy este es un viaje pendiente, pero queremos playita bebe!!"
+                        "id":"1",
+                        "msg": "Siempre hay una formalidad.... mas en un contrato como s.a , elegí otra"
                     },
                     "msgPersonalizado": "Esperemos la esten pasando bien en este día tan especial, pongan next para la siguiente pregunta"
                     }
